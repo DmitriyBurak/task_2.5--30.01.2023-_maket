@@ -59,7 +59,6 @@ body {
 
 .games {
   background: #000915;
-
   padding: 128px;
   display: flex;
   gap: 32px;
@@ -105,6 +104,61 @@ body {
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
+}
+
+.firstGame {
+  background: #000915;
+  display: flex;
+  gap: 135px;
+  padding-top: 234px;
+  padding-bottom: 234px;
+  .firstGame-about {
+    max-width: 584px;
+    margin-top: 48px;
+    h2 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 60px;
+      align-items: center;
+      color: #ffffff;
+      margin-bottom: 32px;
+    }
+    p {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 32px;
+      align-items: center;
+      color: #ffffff;
+      margin-bottom: 32px;
+    }
+    .butLetsGo {
+      width: 234px;
+      height: 48px;
+      background: #9c0332;
+      border-radius: 30px;
+      border-color: #000915;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      align-items: center;
+      color: #ffffff;
+      transition: all 0.3s;
+    }
+    .butLetsGo:hover {
+      transform: scale(1.05);
+    }
+  }
+  .firstGame-image {
+    display: inline-block;
+    img {
+      max-width: 486px;
+    }
+  }
 }
 
 // для планшета
@@ -160,10 +214,34 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .games {
     .game {
       width: 344px;
+    }
+  }
+  .firstGame {
+    padding-top: 50px;
+    padding-bottom: 86px;
+    display: flex;
+    gap: 64px;
+    flex-direction: column;
+    text-align: center;
+    .firstGame-about {
+      h2 {
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+      }
+      p {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+      }
+    }
+    .firstGame-image {
+      img {
+        width: 344px;
+      }
     }
   }
 }
